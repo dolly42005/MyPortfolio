@@ -85,6 +85,12 @@ p {
   z-index: 9999;
 }
 
+.project-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 .intro-content {
   animation: fadeIn 1.2s ease-in;
 }
