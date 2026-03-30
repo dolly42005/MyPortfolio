@@ -1,4 +1,5 @@
 // Function to handle the transition from the intro splash screen to the main portfolio
+console.log("JS loaded");
 function enterPortfolio() {
   const intro = document.getElementById('intro');
   const portfolio = document.getElementById('portfolio');
