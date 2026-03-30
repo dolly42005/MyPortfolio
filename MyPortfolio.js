@@ -27,3 +27,29 @@ window.addEventListener('scroll', () => {
     navbar.classList.remove('scrolled');
   }
 });
+
+
+// ================= EMAILJS PART (NEW) =================
+
+// Initialize EmailJS
+(function () {
+  emailjs.init("qropQLobxsVbbD-EB");
+})();
+
+// Get form
+const form = document.getElementById("contact-form");
+
+// Handle form submit
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); // stop page reload
+
+  emailjs.sendForm("service_t28kikp", "template_tsaa1xy", this)
+    .then(function () {
+      alert("✅ Message sent successfully!");
+      form.reset();
+    })
+    .catch(function (error) {
+      alert("❌ Failed to send message");
+      console.log(error);
+    });
+});
