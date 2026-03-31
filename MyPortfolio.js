@@ -44,7 +44,7 @@ const form = document.getElementById("contact-form");
 form.addEventListener("submit", function (e) {
   e.preventDefault(); // stop page reload
 
-  emailjs.sendForm("service_t28kikp", "template_tsaa1xy", this)
+  emailjs.sendForm("service_e66k4ni", "template_tsaa1xy", this)
     .then(function () {
       alert("✅ Message sent successfully!");
       form.reset();
